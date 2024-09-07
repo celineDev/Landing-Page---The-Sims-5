@@ -1,28 +1,4 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -30,13 +6,36 @@ body {
   margin: 0;
 }
 
+:root {
+  --backgrood: #171717;
+  --foreground: #ffffff;
+  --foreground-hover: #d2d2d2;
+  --primary-color: rgb(124, 225, 2);
+  --secondary-color: rgb(246, 178, 23);
+  --tertiary-color: rgb(247, 36, 94);
+
+  --primary-color-hover: rgb(112, 202, 2);
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--backgrood);
+  color: var(--foreground);
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

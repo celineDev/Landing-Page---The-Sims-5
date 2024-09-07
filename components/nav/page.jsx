@@ -1,0 +1,65 @@
+'use client'
+
+import Link from "next/link";
+import styles from "./page.module.css";
+import { useState } from "react";
+
+const Nav = () => {
+  const [active, setActive] = useState(false)
+
+  const toggleMenu = () => {
+    setActive(!active)
+  }
+
+  const links = [
+    {
+      name: "Creations",
+      link: "#creations"
+    },
+    {
+      name: "Creators",
+      link: "#creators"
+    },
+    {
+      name: "Pricing",
+      link: "#pricing"
+    },
+    {
+      name: "FAQ",
+      link: "#FAQ"
+    },
+    {
+      name: "Contact",
+      link: "#contact"
+    },
+  ]
+
+  return (
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <p className={styles.logo}><a href="#">Sim<span className={styles.logo_color}>s</span></a></p>
+
+        <a href="#" className={active ? styles.activeBurger : styles.burger} aria-label='menu' aria-expanded={active} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div className={`${styles.nav_links} ${active ? styles.open : ''}`}>
+          <ul>
+            {links.map((item, i) => (
+              <li key={i}>
+                <Link href={item.link}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <button className={styles.cta}>Play for Free*</button>
+        </div>
+      </nav>
+    </header>
+  )
+}
+
+export default Nav
