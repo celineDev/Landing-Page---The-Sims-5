@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { useState } from "react";
+import Hero from "../Hero/page";
 
 const Nav = () => {
   const [active, setActive] = useState(false)
@@ -45,7 +46,19 @@ const Nav = () => {
           <span></span>
         </a>
 
-        <div className={`${styles.nav_links} ${active ? styles.open : ''}`}>
+        <ul className={styles.nav_links}>
+          {links.map((item, i) => (
+            <li key={i}>
+              <Link href={item.link}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button className={styles.cta}>Play for Free*</button>
+      </nav>
+
+      <div className={`${styles.nav_links_mobile} ${active ? styles.open : ''}`}>
           <ul>
             {links.map((item, i) => (
               <li key={i}>
@@ -55,9 +68,9 @@ const Nav = () => {
               </li>
             ))}
           </ul>
-          <button className={styles.cta}>Play for Free*</button>
-        </div>
-      </nav>
+          <button className={styles.cta_mobile}>Play for Free*</button>
+      </div>
+      <Hero />
     </header>
   )
 }

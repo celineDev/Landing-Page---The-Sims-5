@@ -23,41 +23,27 @@
     align-items: center;
 }
 
-.nav_links > ul {
+.nav_links {
     display: flex;
 }
 
-.nav_links > ul > li {
+.nav_links > li {
     padding: 0 25px;
 }
 
-.nav_links > ul > li > a {
+.nav_links > li > a {
     transition: 250ms;
 }
 
-.nav_links > ul > li > a:hover {
+.nav_links > li > a:hover {
     color: var(--foreground-hover);
 }
 
-.cta {
-    cursor: pointer;
-    font-family: "Outfit", sans-serif;
-    padding: 18px;
-    margin-left: 50px;
-    background-color: var(--primary-color);
-    font-weight: 700;
-    font-size: 16px;
-    border: 1px solid var(--primary-color);
-    border-radius: 7px;
-    transition: 250ms;
-}
-
-.cta:hover {
-    background-color: var(--primary-color-hover);
-    border: 1px solid var(--primary-color-hover);
-}
-
 .burger {
+    display: none;
+}
+
+.nav_links_mobile {
     display: none;
 }
 
@@ -110,7 +96,13 @@
     /* burger animation end */
 
     .nav_links {
+        display: none;
+    }
+
+    .nav_links_mobile {
+        background-color: var(--background);
         position: fixed;
+        display: flex;
         flex-direction: column;
         top: 116px;
         left: 0;
@@ -121,24 +113,30 @@
         height: 100vh;
         transform: translateX(100%);
         transition: all .5s ease-in-out;
+        z-index: 100;
     }
 
-    .nav_links.open {
+    .nav_links_mobile.open {
         transform: translateX(0);
     }
 
-    .nav_links > ul, .nav_links.open > ul {
+    .nav_links_mobile > ul, .nav_links.open > ul {
         flex-direction: column;
     }
 
-    .nav_links > ul > li, .nav_links.open > ul > li {
+    .nav_links_mobile > ul > li, .nav_links.open > ul > li {
         margin: 10px;
     }
 
     .cta {
-        margin: 15px 0;
-        font-size: 24px;
-        padding: 14px;
+        display: none;
+    }
+
+    .cta_mobile {
         width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 14px;
+        margin: 15px 0;
     }
 }

@@ -7,7 +7,7 @@
 }
 
 :root {
-  --backgrood: #171717;
+  --background: #171717;
   --foreground: #ffffff;
   --foreground-hover: #d2d2d2;
   --primary-color: rgb(124, 225, 2);
@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  background-color: var(--backgrood);
+  background-color: var(--background);
   color: var(--foreground);
 }
 
@@ -38,4 +38,26 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px;
+  margin-left: 50px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 7px;
+  transition: 250ms;
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+  border: 1px solid var(--primary-color-hover);
+}
+
+@media screen and (max-width: 1022px) {
+
 }
