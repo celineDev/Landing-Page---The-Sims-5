@@ -1,0 +1,205 @@
+.about_the_game {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description > p {
+    font-size: 20px;
+    margin-top: 42px;
+    opacity: .7;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description > button {
+    align-self: start;
+    margin: 40px 0;
+}
+
+/* -------------------------- */
+.game_features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.features_icons {
+    display: flex;
+    align-items: center;
+}
+
+.features_item > figure,
+.features_icons > figure {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    color: var(--background);
+    transition: 250ms;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+.icon_container_primary {
+    background-color: var(--primary-color);
+}
+.icon_container_secondary {
+    background-color: var(--secondary-color);
+}
+.icon_container_tertiary {
+    background-color: var(--tertiary-color);
+}
+
+.styling_arrow {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0%;
+}
+
+.styling_arrow > span {
+    max-width: 200px;
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    display: block;
+}
+
+.styling_arrow > figure {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+
+.game_features > .features_item:first-child > .features_icons > .styling_arrow {
+    color: var(--primary-color);
+}
+
+.game_features > .features_item:first-child > .features_icons > .styling_arrow > span {
+    background-color: var(--primary-color);
+}
+
+.game_features > .features_item:nth-child(2) > .features_icons > .styling_arrow {
+    color: var(--secondary-color);
+}
+
+.game_features > .features_item:nth-child(2) > .features_icons > .styling_arrow > span {
+    background-color: var(--secondary-color);
+}
+
+/* -------------------------TEXT----------------------- */
+.features_item > h4 {
+    margin-top: 40px;
+}
+
+.features_item > p {
+    margin: 24px 0;
+    max-width: 280px;
+    width: 100%;
+    opacity: .7;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1022px) {
+    .about_the_game {
+        display: initial;
+    }
+    /* -------------------------- */
+    .features_item > figure,
+    .features_item > div > figure {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .description > p {
+        font-size: 18px;
+    }
+    /* -------------------------- */
+    .game_features {
+        display: flex;
+        flex-direction: column;
+        margin-top: 75px;
+    }
+
+    .features_item > p {
+        margin: 0 0 32px;
+        max-width: 415px;
+        width: 100%;
+        opacity: .7;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .styling_arrow {
+        display: none;
+    }
+}
+
+/* ----------------- animation ----------------- */
+.titles {
+    transform: translateX(-48px);
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+.titles.animateTitles {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.description {
+    transform: translateX(48px);
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+.description.animateDescription {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.game_features > .features_item {
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+.game_features > .features_item.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.game_features > .features_item.animateDelayed {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 500ms ease-out 250ms, opacity 500ms ease-out 250ms;
+}
+
+.game_features > .features_item.animateDelayed2 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 500ms ease-out 500ms, opacity 500ms ease-out 500ms;
+}

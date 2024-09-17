@@ -1,9 +1,9 @@
-// import Next from "../../components/next/page";
+import About from "../../components/About/page";
 
 export default function Home() {
   return (
     <main>
-      {/* <Next /> */}
+      <About />
     </main>
   )
 }
