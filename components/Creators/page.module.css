@@ -1,0 +1,73 @@
+.section {
+    max-width: 100%;
+}
+
+.titles {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.titles > h3 {
+    max-width: none;
+}
+
+.titles > p {
+    padding: 32px 0 0 0;
+    font-size: 18px;
+    opacity: .7;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel_wrapper {
+    display: flex;
+    gap: 14px;
+    padding-top: 14px;
+}
+
+.creator_card {
+    min-width: 260px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.creator_card:hover {
+    border: 1px solid rgba(124, 225, 2, .3);
+}
+
+.creator_card > figure {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.creator_card > figure > figcaption > p:nth-child(2) {
+    font-size: 14px;
+    opacity: .7;
+}
+
+.creator_card > p {
+    padding-top: 8px;
+}
+
+/* --------------- animation --------------- */
+.section > .carousel_wrapper:nth-child(2) {
+    animation: carousel-left 40s linear infinite;
+}
+.section > .carousel_wrapper:nth-child(3) {
+    animation: carousel-left 40s linear infinite reverse;
+}
+
+@keyframes carousel-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1980px);
+    }
+}
