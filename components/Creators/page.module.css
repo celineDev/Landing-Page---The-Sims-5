@@ -29,7 +29,7 @@
 
 .creator_card {
     min-width: 260px;
-    border: 1px solid rgba(255, 255, 255, .1);
+    border: 1px solid var(--gray-border);
     border-radius: 8px;
     padding: 16px;
     cursor: pointer;
@@ -37,7 +37,7 @@
 }
 
 .creator_card:hover {
-    border: 1px solid rgba(124, 225, 2, .3);
+    border: 1px solid var(--dark-green-border-hover);
 }
 
 .creator_card > figure {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { useState } from "react";
 import Hero from "../Hero/page";
+import links from '../../data/links.jsx'
 
 const Nav = () => {
   const [active, setActive] = useState(false)
@@ -11,29 +12,6 @@ const Nav = () => {
   const toggleMenu = () => {
     setActive(!active)
   }
-
-  const links = [
-    {
-      name: "Creations",
-      link: "#creations"
-    },
-    {
-      name: "Creators",
-      link: "#creators"
-    },
-    {
-      name: "Pricing",
-      link: "#pricing"
-    },
-    {
-      name: "FAQ",
-      link: "#FAQ"
-    },
-    {
-      name: "Contact",
-      link: "#contact"
-    },
-  ]
 
   return (
     <header className={styles.header}>

@@ -36,7 +36,7 @@
 
 .carousel_wrapper figure img {
     margin: 6px;
-    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px 0px var(--box-shadow);
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
