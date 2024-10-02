@@ -1,0 +1,149 @@
+.section {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 112px 0 288px;
+    max-width: none;
+}
+
+.section > h3,
+.section > p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section > p {
+    padding-top: 16px;
+    font-size: 18px;
+    opacity: .7;
+}
+
+/* ------------------- faq ------------------- */
+.faq {
+    padding-top: 70px;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 600px;
+    width: 100%;
+}
+
+.faq > li {
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: 20px;
+    padding: 24px 28px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question > p {
+    font-size: 24px;
+}
+
+.icon {
+    color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+
+.answer {
+    font-size: 18px;
+    opacity: .8;
+}
+
+/* ------------------- form ------------------- */
+.form {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 570px;
+    width: 100%;
+}
+.form > textarea {
+    height: 192px;
+    padding: 24px 28px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 18px;
+    resize: none;
+    font-family: "Outfit", sans-serif;
+}
+
+.form > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 10px 0;
+}
+
+.form > div > p {
+    max-width: 300px;
+    opacity: .8;
+}
+
+.form > div > button {
+    height: 48px;
+    max-width: 140px;
+    width: 100%;
+    border-radius: 40px;
+    align-items: center;
+    padding: 9px;
+}
+
+@media screen and (max-width:766px) {
+    .section > p {
+        font-size: 16px;
+    }
+    .question > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .form {
+        padding: 15px;
+    }
+}
+
+/* ------------------- animation ------------------- */
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+.rotateBack {
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.close {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.open {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 16px;
+    transition: all 0.5s ease;
+    animation: smoothly 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoothly {
+    0% {
+        max-height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        max-height: 300vh;
+        height: auto;
+    }
+}
