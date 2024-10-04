@@ -1,0 +1,20 @@
+.to_the_top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 200;
+}
+.to_the_top > figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--background);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 250ms;
+}
+.to_the_top > figure:hover {
+    transform: rotate(360deg);
+}
