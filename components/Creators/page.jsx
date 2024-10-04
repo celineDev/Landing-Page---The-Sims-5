@@ -6,7 +6,7 @@ import creators from '../../data/creators.jsx'
 const Creators = () => {
 
   return (
-    <section className={styles.section}>
+    <section id='creators' className={styles.section}>
       <div className={styles.titles}>
         <h2>Testimonials</h2>
         <h3>Met our Creators</h3>

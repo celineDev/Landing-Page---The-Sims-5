@@ -12,7 +12,7 @@ const Pricing = () => {
   const { ref: thirdFeatureRef, inView: isThirdFeatureVisible } = useInView({ triggerOnce: true, threshold: 0.1 })
 
   return (
-    <section className={styles.section}>
+    <section id='pricing' className={styles.section}>
       <div className={styles.titles}>
         <h2>Our expansions packs</h2>
         <h3>Enhance Your Sims' World</h3>

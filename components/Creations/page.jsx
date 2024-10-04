@@ -12,7 +12,7 @@ const Creations = () => {
 
 
   return (
-    <section className={styles.section}>
+    <section id="creations" className={styles.section}>
       <h3>Our Creators Works</h3>
       <p>Discover breathtaking Sims creations, showcasing boundless creativity in architecture, design, and storytelling.</p>
       {windowWidth > 766 ? (

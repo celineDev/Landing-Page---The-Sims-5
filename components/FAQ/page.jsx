@@ -19,7 +19,7 @@ const FAQ = () => {
   }
 
   return (
-    <section className={styles.section}>
+    <section id='FAQ' className={styles.section}>
       <h3>FAQ's</h3>
       <p>Providing answers to your questions</p>
       <ul className={styles.faq}>

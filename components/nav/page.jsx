@@ -14,7 +14,7 @@ const Nav = () => {
   }
 
   return (
-    <header className={styles.header}>
+    <header id='header' className={styles.header}>
       <nav className={styles.nav}>
         <p className={styles.logo}><a href="#">Sim<span className={styles.logo_color}>s</span></a></p>
 
