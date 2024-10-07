@@ -24,8 +24,8 @@ const Hero = () => {
   return (
     <section className={styles.section}>
       <h1>Live the Virtual<br />Life of your <span className={styles.logo_color}>Dream</span></h1>
-      <p className={styles.hero_p}>Playing The Sims unlocks endless creativity, allowing you to shape, explore, and transform your virtual world.</p>
-      <button className={styles.cta}>Play The Sims 5</button>
+      <p className={styles.hero_p}>Playing Sims unlocks endless creativity, allowing you to shape, explore, and transform your virtual world.</p>
+      <button className={styles.cta}>Play Sims</button>
       <p className={styles.loading_phrases}>{currentPhrase}</p>
       <div>
         <figure>

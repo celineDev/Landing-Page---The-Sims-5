@@ -1,11 +1,11 @@
-import Footer from "../../components/Footer/page";
-import Nav from "../../components/Nav/page";
-import "./globals.css";
+import Footer from "../../components/Footer/page"
+import Nav from "../../components/Nav/page"
+import "./globals.css"
 
 export const metadata = {
-  title: "The Sims 5",
-  description: "A landing page about not created yet sims 5 game",
-};
+  title: "Sims",
+  description: "Immerse yourself in a virtual world where you can build, control, and live the life of your Sims",
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -16,5 +16,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  );
+  )
 }

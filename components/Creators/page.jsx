@@ -10,7 +10,7 @@ const Creators = () => {
       <div className={styles.titles}>
         <h2>Testimonials</h2>
         <h3>Met our Creators</h3>
-        <p>Our creators rave about The Sims, calling it their ultimate playground for limitless creativity and storytelling.</p>
+        <p>Our creators rave about Sims, calling it their ultimate playground for limitless creativity and storytelling.</p>
       </div>
       <div className={styles.carousel_wrapper}>
         {creators.map((creator, i) => (

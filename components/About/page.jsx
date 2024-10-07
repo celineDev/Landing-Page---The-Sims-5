@@ -22,13 +22,13 @@ const About = () => {
           ref={titlesRef}
         >
           <h2>How to play</h2>
-          <h3>Build your dream world in The Sims, all at your own pace.</h3>
+          <h3>Build your dream world in Sims, all at your own pace.</h3>
         </div>
         <div
           className={`${style.description} ${isDescriptionVisible ? style.animateDescription : ''}`}
           ref={descriptionRef}
         >
-          <p>Create your perfect life in The Sims with limitless possibilities. Customize, build, and explore endlessly—no boundaries, just creativity.</p>
+          <p>Create your perfect life in Sims with limitless possibilities. Customize, build, and explore endlessly—no boundaries, just creativity.</p>
           <button>Buy Add-ons</button>
         </div>
       </div>
