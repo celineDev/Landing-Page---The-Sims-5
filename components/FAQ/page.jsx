@@ -41,7 +41,7 @@ const FAQ = () => {
         ))}
       </ul>
       <form className={styles.form} action="">
-        <textarea placeholder='Ask us what you want to know...' value={text} onChange={(e) => setText(e.target.value)}></textarea>
+        <textarea aria-label="Ask us what you want to know" placeholder='Ask us what you want to know...' value={text} onChange={(e) => setText(e.target.value)}></textarea>
         <div>
           <p>We will never answer your questions because this site is a fake.</p>
           <button>Send</button>

@@ -21,7 +21,7 @@ const Pricing = () => {
         <div className={styles.all_packs}>
           <div className={`${styles.pricing_container} ${isFirstFeatureVisible ? `${styles.animateDelayed}` : ''}`} ref={firstFeatureRef}>
             <div className={styles.pack_type}>
-              <h5>Expansion Pack</h5>
+              <h4 className={styles.h5}>Expansion Pack</h4>
               <p>Large packs that expand your game and take your Sims on new adventures.</p>
             </div>
             <div className={styles.pack_pricing}>
@@ -86,7 +86,7 @@ const Pricing = () => {
 
           <div className={`${styles.pricing_container} ${isSecondFeatureVisible ? `${styles.animateDelayed}` : ''}`} ref={secondFeatureRef}>
             <div className={styles.pack_type}>
-              <h5>Game Packs</h5>
+              <h4 className={styles.h5}>Game Packs</h4>
               <p>Medium-sized packs that add new experiences to play in new thematic ways</p>
             </div>
             <div className={styles.pack_pricing}>
@@ -151,7 +151,7 @@ const Pricing = () => {
 
           <div className={`${styles.pricing_container} ${isThirdFeatureVisible ? `${styles.animateDelayed}` : ''}`} ref={thirdFeatureRef}>
             <div className={styles.pack_type}>
-              <h5>Stuff Packs</h5>
+              <h4 className={styles.h5}>Stuff Packs</h4>
               <p>Smaller packs that add more to your Sims' lives with fun objects and fashion.</p>
             </div>
             <div className={styles.pack_pricing}>

@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import useWindowWidth from '../../hooks/useWindowWidth'
 import articles from './../../data/articles'
+import Link from 'next/link'
 
 const Articles = () => {
     const windowWidth = useWindowWidth()
@@ -17,7 +18,7 @@ const Articles = () => {
       <div className={styles.articles}>
         {windowWidth > 640 ? (
             articles.map((article, i) => (
-                <a key={i} href={article.link}>
+                <Link key={i} href={article.link}>
                     <figure>
                         <Image src={article.img} alt={article.alt} width={223} height={223} priority />
                         <figcaption>
@@ -26,11 +27,11 @@ const Articles = () => {
                             <p>{article.text}</p>
                         </figcaption>
                     </figure>
-                </a>
+                </Link>
             ))
         ):(
         articles.map((article, i) => (
-            <a key={i} href={article.link}>
+            <Link key={i} href={article.link}>
                 <figure>
                     <Image src={article.mobile_img} alt={article.alt} width={550} height={160} priority />
                     <figcaption>
@@ -39,7 +40,7 @@ const Articles = () => {
                         <p>{article.mobile_text}</p>
                     </figcaption>
                 </figure>
-            </a>
+            </Link>
             ))
         )}
       </div>

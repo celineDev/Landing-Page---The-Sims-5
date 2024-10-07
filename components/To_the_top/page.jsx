@@ -28,7 +28,7 @@ const To_the_top = () => {
 
   return (
     isVisible && (
-      <Link className={styles.to_the_top} href="#header">
+      <Link className={styles.to_the_top} href="#header" aria-label="Arrow">
         <figure>
           <FontAwesomeIcon icon={faArrowUp} size='lg' />
         </figure>

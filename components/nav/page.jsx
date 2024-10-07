@@ -16,13 +16,13 @@ const Nav = () => {
   return (
     <header id='header' className={styles.header}>
       <nav className={styles.nav}>
-        <p className={styles.logo}><a href="#">Sim<span className={styles.logo_color}>s</span></a></p>
+        <p className={styles.logo}><Link href="#">Sim<span className={styles.logo_color}>s</span></Link></p>
 
-        <a href="#" className={active ? styles.activeBurger : styles.burger} aria-label='menu' aria-expanded={active} onClick={toggleMenu}>
+        <Link href="#" className={active ? styles.activeBurger : styles.burger} aria-label='menu' aria-expanded={active} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
-        </a>
+        </Link>
 
         <ul className={styles.nav_links}>
           {links.map((item, i) => (

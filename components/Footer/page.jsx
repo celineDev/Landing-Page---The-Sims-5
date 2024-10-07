@@ -32,7 +32,7 @@ const Footer = () => {
       <div className={styles.static}>
         <div className={styles.our_company}>
           <div className={styles.about_us}>
-            <p className={styles.logo}><a href="/">Sim<span className={styles.logo_color}>s</span></a></p>
+            <p className={styles.logo}><Link href="/">Sim<span className={styles.logo_color}>s</span></Link></p>
             <p>Sims - the ultimate source to stay updated on all upcoming content, from expansions to game-changing features.</p>
           </div>
 
@@ -49,10 +49,10 @@ const Footer = () => {
               </figure>
               (123) 456 789</Link>
             <figure className={styles.icon}>
-              <a href="https://www.facebook.com"  target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={styles.icon_color} icon={faFacebook} size='lg'></FontAwesomeIcon></a>
-              <a href="https://www.instagram.com"  target="_blank" rel="noopener noreferrer"><FontAwesomeIcon name='test' icon={faInstagram} size='lg'></FontAwesomeIcon></a>
-              <a href="https://www.linkedin.com"  target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size='lg'></FontAwesomeIcon></a>
-              <a href="https://www.dribble.com"  target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDribbble} size='lg'></FontAwesomeIcon></a>
+              <Link href="https://www.facebook.com"  target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FontAwesomeIcon className={styles.icon_color} icon={faFacebook} size='lg'></FontAwesomeIcon></Link>
+              <Link href="https://www.instagram.com"  target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FontAwesomeIcon name='test' icon={faInstagram} size='lg'></FontAwesomeIcon></Link>
+              <Link href="https://www.linkedin.com"  target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><FontAwesomeIcon icon={faLinkedin} size='lg'></FontAwesomeIcon></Link>
+              <Link href="https://www.dribble.com"  target="_blank" rel="noopener noreferrer" aria-label="Dribble"><FontAwesomeIcon icon={faDribbble} size='lg'></FontAwesomeIcon></Link>
             </figure>
           </div>
         </div>

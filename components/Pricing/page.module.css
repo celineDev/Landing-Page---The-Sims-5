@@ -10,6 +10,11 @@
     max-width: 100%;
 }
 
+.h5 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .titles > p {
     opacity: .7;
     font-size: 18px;
@@ -127,6 +132,12 @@
     .pricing_container {
         max-width: none;
         flex: 1 1 48%;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .h5 {
+        font-size: 30px;
     }
 }
 
